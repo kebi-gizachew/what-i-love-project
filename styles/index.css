@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitcount+Grid+Double:wght@100..900&family=Bitcount+Prop+Single:wght@100..900&family=Bitcount:wght@100..900&family=Dancing+Script:wght@400..700&family=Fascinate&family=Luckiest+Guy&family=Manufacturing+Consent&family=My+Soul&family=Share+Tech+Mono&display=swap');
+/*we will first create a variable to store the color
+in hex-decimal so we can use the variable instead of
+the hex*/
+:root{
+    --color-1:#00ff00;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-image:url('https://wallpaperaccess.com/full/4828882.jpg');
+    height:100vh;
+    width:100vw;
+    background-size: cover;                      
+    background-position: center;                
+    background-repeat: no-repeat;               
+    background-attachment: fixed;
+    font-size:13px;
+    color:var(--color-1);
+    font-family:'Share Tech Mono', sans-serif;
+    text-align:center;
+}
+/*we will start off from the header*/
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100vw;
+    height:10vh;
+    background-color:rgba(17, 57, 17, 0.8);
+    padding:10px 10% 10px 10%;
+    border-bottom:1px solid #00ff00;
+    box-shadow:0 2px 190px 5px #00ff00;
+    position:sticky;
+    top:0;
+    left:0;
+    
+
+}
+/*for a cursor to blink*/
+#blink{
+    animation-name:blinking;
+    animation-duration:1s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+}
+@keyframes blinking{
+    0%,100%{
+        opacity:1;
+    }
+    50%{
+        opacity:0;
+    }
+}
+/*for the 360deg rotating pyramid div*/
+#pyramid{
+    border-bottom:20px solid #00ff00;
+    border-left:15px solid transparent;
+    border-right:15px solid transparent;
+    margin-right:10px;
+    animation-name:py;
+    animation-duration:2s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+    
+}
+
+@keyframes py{
+    0%{
+      transform:rotate(0deg);
+    }
+    50%{
+        transform:rotate(180deg);
+    }
+    100%{
+       transform:rotate(360deg);
+        
+    }
+
+}
+/*the whole class is the logo of my design*/
+.whole{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+a{
+    text-decoration:none;
+}
+h1{
+    font-family:"Bitcount";
+    font-size:29px; 
+    color:var(--color-1);
+
+} 
+nav ul{
+    background-color:black;
+    border:1px solid #00ff00;
+    border-radius:15px;
+    display:flex;
+    justify-content:space-evenly;
+    padding:5px;
+    box-shadow:0 0 170px 0.0008px #00ff00;
+   
+}
+nav ul>li{
+    list-style:none;
+    margin:10px;
+    font-size:15px;
+    margin-left:30px;
+}
+nav ul>li>a{
+    color: var(--color-1);;
+
+}
+nav ul>li>a:hover{
+    background-color:var(--color-1);;
+    padding:10px;
+    color:black;
+    border-radius:10px;
+}
+nav ul>li:last-child>a{
+    background-color:var(--color-1);
+    color:black;
+    border-radius:10px;
+    padding:10px 15px 10px 15px;
+
+}
+nav ul>li:last-child>a:hover{
+    color:white;
+}
+/*for the matrix h1 to have a hidden and pop up effect*/
+.mat{
+    font-size:35px;
+    font-style:italic;
+}
+.mat:first-child{
+    
+    animation-name:letter;
+    animation-duration:1s;
+    animation-timing-function:ease-in;
+    animation-delay: 1s;
+    animation-iteration-count:1;
+}
+.mat:nth-child(2){
+ 
+    animation-name:letter;
+    animation-duration:2s;
+    animation-timing-function:ease-in;
+    animation-delay: 2s;
+    animation-iteration-count:1;
+}
+.mat:nth-child(3){
+ 
+    animation-name:letter;
+    animation-duration:2s;
+    animation-timing-function:ease-in;
+    animation-delay: 3s;
+    animation-iteration-count:1;
+}
+.mat:nth-child(4){
+  
+    animation-name:letter;
+    animation-duration:2s;
+    animation-timing-function:ease-in;
+    animation-delay: 4s;
+    animation-iteration-count:1;
+}
+.mat:nth-child(5){
+  
+    animation-name:letter;
+    animation-duration:2s;
+    animation-timing-function:ease-in;
+    animation-delay: 5s;
+    animation-iteration-count:1;
+}
+.mat:nth-child(6){
+  
+    animation-name:letter;
+    animation-duration:2s;
+    animation-timing-function:ease-in;
+    animation-delay: 6s;
+    animation-iteration-count:1;
+}
+@keyframes letter{
+    0%,100%{
+        opacity:1;
+    }
+    50%{
+        opacity:0;
+    }
+}
+p{
+    font-size:18px;
+}
+#second{
+    font-size:30px;
+}
+
+.text{
+    text-align:center;
+    overflow:hidden;
+    width:600px;
+    height:600px;
+    margin:auto;
+    margin-top:15vw;
+    
+}
+footer a{
+    color:var(--color-1);
+}
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px;
+  color:var(--color-1);
+  font-family: Arial, sans-serif;
+  background-color:black;
+  margin-top:-58px;
+}
+
+.footer-column {
+  flex: 1 1 220px;
+  margin: 10px;
+}
+
+.footer-column h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: rgb(3, 194, 3);
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-column p {
+  margin: 5px 0;
+}
+/*it is better off to have the media showing at last*/
+@media only screen and (max-width:750px){
+    body{
+        width:100vw;
+        overflow-x:hidden;
+        
+    }
+    main{
+        width:650px;
+        height:auto;
+        padding:0;
+    }
+    .text{
+        width:400px;
+        margin-top:150px;
+        margin-bottom:0;
+        margin-left:60px;
+        padding-right:0;
+    }
+    .whole{
+        font-size:16px;
+        margin-left:-40px;
+    }
+    header nav ul{
+        border:none;
+        background-color:transparent;
+        padding:0px;
+        margin-right:-20px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    header li a{
+        margin:-9px;
+        background:transparent;
+    }
+    header li{
+        font-size:14px;
+    }
+    header li a:hover{
+         padding:5px;
+    }
+    header h1{
+        font-size:25px;
+    }
+   
+    footer{
+        padding-left:37%;
+        text-align:left;
+    }
+}
+
