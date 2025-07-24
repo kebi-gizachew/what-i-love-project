@@ -7,12 +7,11 @@
     box-sizing:border-box;
 }
 body{
-   background-image:url('https://img.freepik.com/premium-photo/black-sky-with-stars-white-sky_327903-9995.jpg?w=996');
-
-   background-size: cover;                      /* Ensures it fills the screen */
-  background-position: center;                 /* Keeps the image centered */
-  background-repeat: no-repeat;                /* Prevents repeating */
-   background-attachment: fixed;
+    background-image:url('https://img.freepik.com/premium-photo/black-sky-with-stars-white-sky_327903-9995.jpg?w=996');
+    background-size: cover;             /* Ensures it fills the screen */
+    background-position: center;        /* Keeps the image centered */
+    background-repeat: no-repeat;       /* Prevents repeating */
+    background-attachment: fixed;
     color:#00ff00;
     font-size:20px;
     width:100vw;
@@ -41,34 +40,42 @@ nav li{
     list-style:none;
     margin:50px;
 }
+/*text-decoration:none is used to remove the underline of a*/
 nav li>a{
     text-decoration:none;
     color:#00ff00;
 }
 nav{
     width:300px;
-    margin-right:50px;
-   
+    margin-right:50px; 
 }
 nav a:hover{
-  
     background-color:#00ff00;
     padding:8px;
     border-radius:9px;
     color:black;
 }
-.shaper{
-   width:60vw;
-   max-width:600px;
-   height:auto;
-   background-color:rgba(0,0,0,0.7);
-   border:1px solid #00ff00;
-   border-radius:5vw;
-   box-shadow:0 0 50px 3px #00ff00;
-   text-align:center;
-   margin-top:120px;
-  padding:20px;
+main{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    width:100vw;
 }
+/*shaper has a form elements in it*/
+.shaper{
+    width:60vw;
+    max-width:600px;
+    height:auto;
+    background-color:rgba(0,0,0,0.7);
+    border:1px solid #00ff00;
+    border-radius:5vw;
+    box-shadow:0 0 50px 3px #00ff00;
+    text-align:center;
+    margin-top:120px;
+    padding:20px;
+}
+/*below the css styles of an element we can adjust 
+the elements behavior through media queries*/
 @media only screen and (max-width:970px){
     header{
         display:flex;
@@ -89,32 +96,9 @@ nav a:hover{
         background-color:rgba(0,0,0,0.3);
     }
 }
-.inside{
-    color:#00ff00;
-    width:80vw;
-    height:100px;
-    text-align:center;
-}
-
-
-.icons a{
-    color:#00ff00;
-}
-.icons{
-    color:#00ff00;
-    display:flex;
-    justify-content:space-evenly;
-    align-items:center;
+form{
     margin:20px;
-margin-left:35px;
-    width:70vw;
-    height:50px;
-    text-align:center;
-   
-
-}
-fieldset{
-    border:none;
+    padding-top:25px;
 }
 form>h1{
     margin-bottom:7%;
@@ -129,7 +113,7 @@ label{
     margin-top:10px;
 }
 input[type='email'],input[type="password"],input[type="number"]{
-   border:none;
+    border:none;
     background:transparent;
     border-bottom:1px solid #00ff00;
     width:80%;
@@ -137,6 +121,7 @@ input[type='email'],input[type="password"],input[type="number"]{
     margin-left:-10px;
 
 }
+/*the third input type is writte as follows*/
 input:nth-of-type(3){
     margin-bottom:10px;
 }
@@ -149,11 +134,13 @@ input[type="radio"]{
     cursor:pointer;
 
 }
+/*the last type of input from the radio typed*/
 input[type="radio"]:last-of-type{
     margin-bottom:10px;
 }
 fieldset{
     margin-top:10px;
+    border:none;
 }
 input[type="checkbox"]{
     margin:10px;
@@ -167,7 +154,6 @@ input[type="range"]{
 .sat{
     margin-top:20px;
 }
-
 textarea{
     background-color:black;
     border:2px solid #00ff00;
@@ -180,6 +166,8 @@ textarea{
 textarea::placeholder{
     color:#00ff00;
 }
+/*:focus is used for inputs so that when the input place is 
+pressed the following appears*/
 input:focus{
     background-color:#00ff00;
     color:black;
@@ -206,17 +194,7 @@ button:hover{
     background-color:#00ff00;
     color:black;
 }
-form{
-   margin:20px;
-   padding-top:25px;
-}
-main{
-    display:flex;
-    justify-content:space-evenly;
-    align-items:center;
-    width:100vw;
-  
-}
+
 footer{
     color:#00ff00;
     display:flex;
@@ -224,10 +202,37 @@ footer{
     align-items:center;
     width:100vw;
     height:auto;
-  margin-top:100px;
+    margin-top:100px;
     
 }
- p{
+.inside{
+    color:#00ff00;
+    width:80vw;
+    height:100px;
+    text-align:center;
+}
+p{
     font-style:italic;
 }
+.icons a{
+    color:#00ff00;
+}
+.icons{
+    color:#00ff00;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    margin:20px;
+    margin-left:35px;
+    width:70vw;
+    height:50px;
+    text-align:center;
+}
+.icons a:hover{
+    color:white;
+}
+.icons a:visited{
+    color:green;
+}
+
 
