@@ -1,2 +1,20 @@
 # what-i-love-project
 An advertisement of a coders company
+## 🧾Internal Storage
+images\internal_storage.PNG
+## 🛠️ Tech Stack
+- HTML5
+- CSS3
+## 🚀 Features
+- 🟢 Neon green Matrix theme
+- 🎯 Responsive design
+- 🌐 Smooth navigation
+ ## 📸 Demo
+[Live Site 🌍](https://your-deployment-link.com)
+## 🤝 Contributing
+Feel free to fork, submit issues or pull requests!
+## 👤 Author
+Kebron Gizachew
+GitHub
+
+
