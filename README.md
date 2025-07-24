@@ -10,7 +10,7 @@ images\internal_storage.PNG
 - 🎯 Responsive design
 - 🌐 Smooth navigation
  ## 📸 Demo
-[Live Site 🌍](https://your-deployment-link.com)
+[Live Site 🌍](https://what-i-love-project.vercel.app/)
 ## 🤝 Contributing
 Feel free to fork, submit issues or pull requests!
 ## 👤 Author
