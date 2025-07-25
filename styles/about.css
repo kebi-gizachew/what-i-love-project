@@ -172,6 +172,8 @@ main{
     text-align:justify;
     padding-top:50px;
     font-size:20px;
+    line-height:29px;
+    color:rgb(34, 233, 34)
 }
 main>h2{
    grid-area:h2;

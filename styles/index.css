@@ -209,6 +209,25 @@ p{
     margin-top:15vw;
     
 }
+button{
+    width:50%;
+    height:40px;
+    margin-top:40px;
+    background:linear-gradient(45deg, #1a8b1a,#00ff00,#1a8b1a);
+    border:1px solid black;
+    border-radius:10px;
+    color:black;
+    box-shadow:0 0 50px 10px #00ff00;
+    color:black;
+    font-size:20px;
+}
+button a{
+    color:black;
+}
+button a:hover{
+    color:white;
+
+}
 footer a{
     color:var(--color-1);
 }
