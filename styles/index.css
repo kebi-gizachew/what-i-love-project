@@ -226,6 +226,7 @@ button a{
 }
 button a:hover{
     color:white;
+    font-style:italic;
 
 }
 footer a{
